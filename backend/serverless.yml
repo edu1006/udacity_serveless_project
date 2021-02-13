@@ -12,11 +12,12 @@ provider:
   stage: ${opt:stage, 'dev'}
   region: ${opt:region, 'us-east-1'}
 
-functions:
+  functions:
 
-  Auth:
-    handler: src/lambda/auth/auth0Authorizer.handler
-
+    Auth:
+      handler: src/lambda/auth/auth0Authorizer.handler
+  
+    
     resources:
       Resources:
         # API Gateway
